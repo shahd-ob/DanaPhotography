@@ -28,8 +28,8 @@ overflow-x: visible;
         background-color: white;
         align-items: center;
         position: relative;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        left: 1rem;
+        right: 1rem;
      }
 
     .menu .logo {
@@ -64,6 +64,12 @@ overflow-x: visible;
       .menu{
         background-position: center;
         background-size: cover;
+        }
+        .menu .logo {
+        font-size: 2rem;
+        }
+        .menu li a{
+        font-size: 1rem;
         }
     }
 
@@ -135,6 +141,8 @@ height: 500px;
         align-items: center;
         justify-content: center;
         background-color: white;
+        left: 1rem;
+        right: 1rem;
     }
 
     .about-section {
