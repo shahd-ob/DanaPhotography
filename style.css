@@ -1,38 +1,36 @@
-
-     
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300&family=The+Nautigal&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-    /* /* @media only screen and (max-width: 720px) */
- html{
-    font-size: 62.5%;
+
+html{
+    font-size: 0.625rem;
  }
  /* the above set the px size to 10px instend of 1 em = 10em insted of 16 wich makes the math easier when doubling  */
- html,body
+ body
 {
-      /* margin: 0px; */
+    margin: auto;
     /* padding: 0px; */ 
-/* overflow-x: scroll; */
+ 
+overflow-x: visible;
 } 
  * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         list-style: none;
-        scroll-behavior: smooth; 
+        scroll-behavior: auto; 
         font-family: 'Amiri', serif;
     }
 
-    .menu {
-        max-width: 100%;
+    .menu { 
         min-height: 100%;
         padding-top: 1.6rem;
         padding-bottom: 3rem;
         background-color: white;
-        /* justify-content: space-between; */
         align-items: center;
         position: relative;
-        /* white-space: nowrap; */
-    }
+        padding-left: 1rem;
+        padding-right: 1rem;
+     }
 
     .menu .logo {
         font-family: 'Roboto', sans-serif;
@@ -58,7 +56,6 @@
         padding-right: 3rem;
         justify-content: space-evenly;
         position: relative;
-        
     }
     @media screen and (max-width: 650px) {
         .menu ul li a{
@@ -93,14 +90,6 @@
     #list li:nth-of-type(4) {
         order: 1;
     }
-
-    @media only screen and (min-width: 768px) {
-        /* For mobile phones: */
-        .menu {
-          width: auto;
-          
-        }
-      }
 
  /* about section  */
     /* .about{
@@ -153,13 +142,13 @@ height: 500px;
         background-size: 55%;
         background-color: white;
         overflow: hidden; 
-        padding: 9.6em 0;
+        padding: 9.6rem 0;
     }
 
     .inner-container {
         border-radius: 5px;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-        max-width: auto;
+        width: auto;
         float: right;
         background-color: white;
         padding: 5em;
@@ -195,38 +184,14 @@ height: 500px;
         padding-top: 5em;
 
     }
-/* 
-    @media screen and (max-width:75em) {
-        .inner-container {
-            padding: 5em;
-        }
-    }
  
-    @media screen and (max-width:65.5em) {
-         .about-section {
-            background-size: 1em;
-            padding: 6.3em 2.5em;
-        } 
-
-        .inner-container {
-            width: 1em;
-        }
-    }
-
-    @media screen and (max-width:37.5em) {
-        .about-section {
-            padding: 0;
-        } 
-
-        .inner-container {
-            padding: 3.66em;
-        }
-    }  */
-
     /* sevices section  */
     .products {
         background-color: white;
-        padding: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         border-radius: 5px;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
         max-width: auto;
@@ -437,8 +402,7 @@ height: 500px;
         border-radius: 5px;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
         cursor: pointer;
-        transition: 0.5s;
- 
+        transition: 0.5s; 
        
       }
 
@@ -458,7 +422,6 @@ height: 500px;
     .sicon .fa-brands {
         color: black;
         font-size: 1em;
-
     }
 
     .link:hover h3 {
@@ -498,12 +461,22 @@ height: 500px;
     }
 
     .container {
-        max-width: 122.4%;
-        width: 90%;
-        margin: auto;
-        padding: 4em 0;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
         border-radius: 5px;
+        align-self: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        position: relative;
+      }
+      @media(max-width:650px) {
+        .container{
+        left: 1.5rem; 
+      }
     }
 
     h1 {
@@ -511,17 +484,20 @@ height: 500px;
     }
 
     .photo-gallery {
+      
         display:flex;
         gap: 2em;
         overflow-y: scroll;
         height: 120rem;
-     }
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
 
     .column {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
+ 
     }
 
     .photo img {
@@ -529,6 +505,7 @@ height: 500px;
         min-height: 100%;
         border-radius: 5px;
         object-fit: cover;
+        align-content: center;
     }
 
     @media(max-width:76.8em) {
@@ -536,50 +513,7 @@ height: 500px;
             flex-direction: column;
         }
     }
-    @media screen (width:660px;) {
-        .container{
-            margin: 1rem;
-            padding: 30px 0;
-            }  
-        .container h1 {
-            font-size: 1.5rem;
-            text-align: center;
-            padding-bottom: 1rem;
-            padding-left: 2rem;
-            }
-            h1 {
-                margin-bottom: 1rem;
-            }      
-        
-            .photo-gallery {
-                display:flex;
-                gap: 1em;
-                overflow-y: scroll;
-                height: 60rem;
-             }
-        
-            .column {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-        
-            }
-            .photo img {
-                max-width: 50%;
-                min-height: 50%;
-                border-radius: 5px;
-                object-fit: cover;
-            }
-            .container {
-                max-width: 60.2%;
-                width: 45%;
-                margin: auto;
-                padding: 2em 0;
-                box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-                border-radius: 5px;
-            }
-        }
-
+   
     /* footer   */
     footer {
         max-width: 100%;
