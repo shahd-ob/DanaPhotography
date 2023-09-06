@@ -7,7 +7,7 @@ html{
  /* the above set the px size to 10px instend of 1 em = 10em insted of 16 wich makes the math easier when doubling  */
  body
 {
-    margin: auto;
+    margin:auto;
     /* padding: 0px; */ 
  
 overflow-x: visible;
@@ -17,12 +17,11 @@ overflow-x: visible;
         margin: 0;
         box-sizing: border-box;
         list-style: none;
-        scroll-behavior: auto; 
+        scroll-behavior: smooth; 
         font-family: 'Amiri', serif;
     }
 
     .menu { 
-        min-height: 100%;
         padding-top: 1.6rem;
         padding-bottom: 3rem;
         background-color: white;
@@ -43,7 +42,7 @@ overflow-x: visible;
     .menu ul {
         display: flex;
         justify-content: space-evenly;
-         flex-grow: 1;
+        flex-grow: 1;
         flex-shrink: 1;
     }
 
@@ -57,24 +56,26 @@ overflow-x: visible;
         justify-content: space-evenly;
         position: relative;
     }
+
     @media screen and (max-width: 650px) {
         .menu ul li a{
-            font-size: 1.8rem;
+            font-size:1.8rem;
              } 
       .menu{
         background-position: center;
         background-size: cover;
-        }
+        padding-top: 0.8rem;
+        padding-bottom: 1.5rem;
+        overflow-x:visible ;
+         }
         .menu .logo {
         font-size: 2rem;
         }
         .menu li a{
-        font-size: 1rem;
          padding-left: 1.5rem;
-        padding-right: 1.5rem;   
+        padding-right: 1.5rem;
         }
-    }
-
+    }  
     .menu li a:hover {
         border-bottom: 0.1rem solid black;
     }
@@ -129,13 +130,12 @@ float: left;
  text-align: center;
 float: left;
  margin-left: 70px; 
- }
+ }*
 .about .aboutimg img {
 height: 500px;
  padding: 20px;
  padding-left: 300px;
- /* width: 900px; 
- */
+ width: 900px; */
 */ 
  .about {
         min-height: 100%;
@@ -145,6 +145,7 @@ height: 500px;
         background-color: white;
         left: 1rem;
         right: 1rem;
+        top: auto;
     }
 
     .about-section {
